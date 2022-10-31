@@ -16,6 +16,7 @@ import android.widget.FrameLayout
 class BubbleLayout @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0) :
     FrameLayout(context, attrs, defStyleAttr) {
     var arrowDirection: ArrowDirection? = null
+        private set
     private var mBubble: Bubble? = null
     var arrowWidth = 0f
         private set

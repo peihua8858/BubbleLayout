@@ -27,9 +27,9 @@ class MainActivity : AppCompatActivity() {
             val location = IntArray(2)
             v.getLocationInWindow(location)
             if (random.nextBoolean()) {
-                bubbleLayout.arrowDirection = ArrowDirection.TOP
+                bubbleLayout.setArrowDirection(ArrowDirection.TOP)
             } else {
-                bubbleLayout.arrowDirection = ArrowDirection.BOTTOM
+                bubbleLayout.setArrowDirection(ArrowDirection.BOTTOM)
             }
             popupWindow!!.showAtLocation(v, Gravity.NO_GRAVITY, location[0], v.height + location[1])
         }
